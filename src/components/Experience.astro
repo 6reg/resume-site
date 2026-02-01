@@ -21,12 +21,12 @@ const { title, company, period, location, bullets } = Astro.props;
         <p>{location}</p>
       </div>
     </div>
-    <ul class="space-y-3 text-neutral-700">
+    <ul class="space-y-2 text-neutral-700">
       {bullets.map((bullet) => (
         <li class="flex items-start gap-4">
           <span class="text-accent mt-1 flex-shrink-0 text-lg">✨</span>
           <span class="leading-relaxed">{bullet}</span>
-      </li>
-    ))}
-  </ul>
+        </li>
+      ))}
+    </ul>
 </div>
