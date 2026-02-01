@@ -1,0 +1,13 @@
+---
+interface Props {
+  category: string;
+  skills: string;
+}
+
+const { category, skills } = Astro.props;
+---
+
+<div class="mb-3 last:mb-0">
+  <span class="font-semibold text-neutral-900">{category}:</span>
+  <span class="text-neutral-600 ml-1">{skills}</span>
+</div>
