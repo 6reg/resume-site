@@ -8,129 +8,160 @@ import SkillCategory from '../components/SkillCategory.astro';
 ---
 
 <Layout title="Greg Mathias | Full Stack Engineer">
-  <main class="max-w-3xl mx-auto px-6 py-8">
-    <Header
-      name="Greg Mathias"
-      email="mathiasgreg@gmail.com"
-      github="github.com/6reg"
-    />
-
-    <!-- Summary -->
-    <Section title="Summary">
-      <p class="text-neutral-600 leading-relaxed">
-        Experienced Full Stack Engineer specializing in Ruby on Rails, API development, and scalable web applications.
-        Passionate about building user-focused solutions that enhance efficiency and engagement in healthcare and research.
-        Seeking to contribute my expertise to a high-impact team focused on improving healthcare technology.
-      </p>
-    </Section>
-
-    <!-- Experience -->
-    <Section title="Experience">
-      <Experience
-        title="Software Engineer"
-        company="Medical University of South Carolina"
-        period="December 2021 - Present"
-        location="Charleston, SC (Remote)"
-        bullets={[
-          "Develop and maintain full-stack web applications to streamline translational research workflows.",
-          "Design and optimize APIs for seamless data integration and retrieval.",
-          "Enhance application performance through database query optimizations and backend improvements.",
-          "Collaborate with cross-functional teams to implement user-friendly interfaces and workflows."
-        ]}
+  <main class="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto">
+      <Header 
+        name="Greg Mathias" 
+        email="mathiasgreg@gmail.com" 
+        github="github.com/6reg" 
       />
 
-      <Experience
-        title="Data Analyst"
-        company="TELUS International"
-        period="January 2018 - April 2022"
-        location="Remote"
-        bullets={[
-          "Analyzed geographic data to refine search accuracy in mapping applications.",
-          "Provided ground truth data for supervised learning models, enhancing AI-driven search results.",
-          "Delivered insights to improve system performance and data integrity."
-        ]}
-      />
-
-      <Experience
-        title="Production Manager"
-        company="TalkPoint"
-        period="March 2011 - June 2016"
-        location="New York, NY"
-        bullets={[
-          "Managed live and on-demand webcast productions, ensuring seamless technical execution.",
-          "Oversaw technical logistics, scheduling, and quality control for high-profile digital events.",
-          "Worked closely with development teams to improve platform capabilities and user experience."
-        ]}
-      />
-    </Section>
-
-    <!-- Education -->
-    <Section title="Education">
-      <Education
-        degree="Master's Degree, Data Science"
-        school="Eastern University"
-        year="Expected December 2025"
-      />
-      <Education
-        degree="BS, Environmental Science"
-        school="Sierra Nevada University"
-        year="2007"
-      />
-    </Section>
-
-    <!-- Certifications -->
-    <Section title="Certifications">
-      <ul class="space-y-2 text-neutral-600">
-        <li class="flex items-start gap-3">
-          <span class="text-accent mt-1 flex-shrink-0">✨</span>
-          <span><strong class="text-neutral-900">Data Science Fellow</strong> — Correlation One (2024)</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-accent mt-1 flex-shrink-0">✨</span>
-          <span><strong class="text-neutral-900">TESOL Certification</strong> — VIPKid</span>
-        </li>
-      </ul>
-    </Section>
-
-    <!-- Involvement -->
-    <Section title="Involvement">
-      <ul class="text-neutral-600">
-        <li class="flex items-start gap-3">
-          <span class="text-accent mt-1 flex-shrink-0">✨</span>
-          <span><strong class="text-neutral-900">Section Leader</strong> — Stanford University: Code In Place (April - June 2024)</span>
-        </li>
-      </ul>
-    </Section>
-
-    <!-- Skills -->
-    <Section title="Skills & Technologies">
-      <div class="space-y-2">
-        <SkillCategory
-          category="Full Stack Development"
-          skills="Ruby on Rails, JavaScript, React, TypeScript"
-        />
-        <SkillCategory
-          category="API & Backend"
-          skills="RESTful API Design, GraphQL, PostgreSQL, MySQL"
-        />
-        <SkillCategory
-          category="Cloud & DevOps"
-          skills="Docker, CI/CD, Git, GitHub, Travis CI"
-        />
-        <SkillCategory
-          category="Data & Analytics"
-          skills="SQL, Python, Data Modeling"
-        />
-        <SkillCategory
-          category="Healthcare Tech"
-          skills="HL7, FHIR (Familiarity)"
-        />
+      <!-- Summary -->
+      <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 p-8 mb-8 hover:shadow-2xl transition-shadow duration-300">
+        <Section title="Summary">
+          <p class="text-neutral-700 leading-relaxed text-lg">
+            Experienced Full Stack Engineer specializing in Ruby on Rails, API development, and scalable web applications. 
+            Passionate about building user-focused solutions that enhance efficiency and engagement in healthcare and research. 
+            Seeking to contribute my expertise to a high-impact team focused on improving healthcare technology.
+          </p>
+        </Section>
       </div>
-    </Section>
 
-    <!-- Footer -->
-    <footer class="text-center text-sm text-neutral-400 pt-8 border-t border-neutral-200 no-print">
-      <p>Built with Astro & Tailwind CSS</p>
-    </footer>
+      <!-- Experience -->
+      <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 p-8 mb-8 hover:shadow-2xl transition-shadow duration-300">
+        <Section title="Experience">
+          <div class="space-y-8">
+            <Experience
+              title="Software Engineer"
+              company="Medical University of South Carolina"
+              period="December 2021 - Present"
+              location="Charleston, SC (Remote)"
+              bullets={[
+                "Develop and maintain full-stack web applications to streamline translational research workflows.",
+                "Design and optimize APIs for seamless data integration and retrieval.",
+                "Enhance application performance through database query optimizations and backend improvements.",
+                "Collaborate with cross-functional teams to implement user-friendly interfaces and workflows."
+              ]}
+            />
+            
+            <Experience
+              title="Data Analyst"
+              company="TELUS International"
+              period="January 2018 - April 2022"
+              location="Remote"
+              bullets={[
+                "Analyzed geographic data to refine search accuracy in mapping applications.",
+                "Provided ground truth data for supervised learning models, enhancing AI-driven search results.",
+                "Delivered insights to improve system performance and data integrity."
+              ]}
+            />
+            
+            <Experience
+              title="Production Manager"
+              company="TalkPoint"
+              period="March 2011 - June 2016"
+              location="New York, NY"
+              bullets={[
+                "Managed live and on-demand webcast productions, ensuring seamless technical execution.",
+                "Oversaw technical logistics, scheduling, and quality control for high-profile digital events.",
+                "Worked closely with development teams to improve platform capabilities and user experience."
+              ]}
+            />
+          </div>
+        </Section>
+      </div>
+
+      <!-- Education & Certifications Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+        <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 p-8 hover:shadow-2xl transition-shadow duration-300">
+          <Section title="Education">
+            <div class="space-y-6">
+              <Education
+                degree="Master's Degree, Data Science"
+                school="Eastern University"
+                year="Expected December 2025"
+              />
+              <Education
+                degree="BS, Environmental Science"
+                school="Sierra Nevada University"
+                year="2007"
+              />
+            </div>
+          </Section>
+        </div>
+
+        <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 p-8 hover:shadow-2xl transition-shadow duration-300">
+          <Section title="Certifications">
+            <ul class="space-y-4 text-neutral-700">
+              <li class="flex items-start gap-4">
+                <span class="text-accent mt-1 flex-shrink-0 text-xl">✨</span>
+                <div>
+                  <span class="font-semibold text-neutral-900 text-lg">Data Science Fellow</span>
+                  <p class="text-neutral-600">Correlation One (2024)</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <span class="text-accent mt-1 flex-shrink-0 text-xl">✨</span>
+                <div>
+                  <span class="font-semibold text-neutral-900 text-lg">TESOL Certification</span>
+                  <p class="text-neutral-600">VIPKid</p>
+                </div>
+              </li>
+            </ul>
+          </Section>
+        </div>
+      </div>
+
+      <!-- Involvement & Skills Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+        <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 p-8 hover:shadow-2xl transition-shadow duration-300">
+          <Section title="Involvement">
+            <ul class="space-y-4 text-neutral-700">
+              <li class="flex items-start gap-4">
+                <span class="text-accent mt-1 flex-shrink-0 text-xl">✨</span>
+                <div>
+                  <span class="font-semibold text-neutral-900 text-lg">Section Leader</span>
+                  <p class="text-neutral-600">Stanford University: Code In Place (April - June 2024)</p>
+                </div>
+              </li>
+            </ul>
+          </Section>
+        </div>
+
+        <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 p-8 hover:shadow-2xl transition-shadow duration-300">
+          <Section title="Skills & Technologies">
+            <div class="space-y-4">
+              <SkillCategory 
+                category="Full Stack Development" 
+                skills="Ruby on Rails, JavaScript, React, TypeScript" 
+              />
+              <SkillCategory 
+                category="API & Backend" 
+                skills="RESTful API Design, GraphQL, PostgreSQL, MySQL" 
+              />
+              <SkillCategory 
+                category="Cloud & DevOps" 
+                skills="Docker, CI/CD, Git, GitHub, Travis CI" 
+              />
+              <SkillCategory 
+                category="Data & Analytics" 
+                skills="SQL, Python, Data Modeling" 
+              />
+              <SkillCategory 
+                category="Healthcare Tech" 
+                skills="HL7, FHIR (Familiarity)" 
+              />
+            </div>
+          </Section>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="text-center py-8">
+        <div class="bg-white/60 backdrop-blur-sm rounded-xl shadow-lg border border-white/20 p-6 no-print hover:shadow-xl transition-shadow duration-300">
+          <p class="text-neutral-500 text-sm font-medium">Built with Astro & Tailwind CSS</p>
+        </div>
+      </footer>
+    </div>
   </main>
 </Layout>

@@ -7,7 +7,9 @@ interface Props {
 const { category, skills } = Astro.props;
 ---
 
-<div class="mb-3 last:mb-0">
-  <span class="font-semibold text-neutral-900">{category}:</span>
-  <span class="text-neutral-600 ml-1">{skills}</span>
+<div class="bg-gradient-to-r from-accent-light/20 to-transparent rounded-lg p-4 border border-accent/20 hover:shadow-sm transition-shadow duration-300">
+  <div class="flex flex-col sm:flex-row sm:items-center gap-2">
+    <span class="font-bold text-neutral-900 text-base min-w-fit">{category}:</span>
+    <span class="text-neutral-700 leading-relaxed">{skills}</span>
+  </div>
 </div>

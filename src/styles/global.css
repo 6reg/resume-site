@@ -2,15 +2,24 @@
 
 @theme {
   --font-sans: "Inter", system-ui, sans-serif;
-  --color-accent: #2563eb;
+  --color-accent: #3b82f6;
   --color-accent-dark: #1d4ed8;
+  --color-accent-light: #dbeafe;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+body {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  min-height: 100vh;
+}
+
 @media print {
+  body {
+    background: white !important;
+  }
   .no-print {
     display: none !important;
   }
