@@ -10,21 +10,21 @@ interface Props {
 const { title, company, period, location, bullets } = Astro.props;
 ---
 
-<div class="bg-gradient-to-r from-accent-light/30 to-transparent rounded-xl p-6 border-l-4 border-accent hover:shadow-md transition-shadow duration-300">
-    <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start mb-4">
+<div class="bg-gradient-to-r from-accent-light/20 to-transparent rounded-lg p-5 border border-accent/10">
+    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3">
       <div class="flex-1">
-        <h3 class="text-xl font-bold text-neutral-900 mb-1">{title}</h3>
-        <p class="text-accent font-semibold text-lg">{company}</p>
+        <h3 class="text-lg font-semibold text-neutral-900 mb-1">{title}</h3>
+        <p class="text-accent font-medium">{company}</p>
       </div>
-      <div class="text-sm text-neutral-500 lg:text-right mt-2 lg:mt-0">
+      <div class="text-sm text-neutral-500 sm:text-right mt-2 sm:mt-0">
         <p class="font-medium">{period}</p>
         <p>{location}</p>
       </div>
     </div>
     <ul class="space-y-2 text-neutral-700">
       {bullets.map((bullet) => (
-        <li class="flex items-start gap-4">
-          <span class="text-accent mt-1 flex-shrink-0 text-lg">✨</span>
+        <li class="flex items-start gap-3">
+          <span class="text-accent mt-0.5 flex-shrink-0">✨</span>
           <span class="leading-relaxed">{bullet}</span>
         </li>
       ))}

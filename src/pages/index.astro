@@ -8,8 +8,8 @@ import SkillCategory from '../components/SkillCategory.astro';
 ---
 
 <Layout title="Greg Mathias | Full Stack Engineer">
-  <main class="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-5xl mx-auto">
+  <main class="min-h-screen py-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto">
       <Header 
         name="Greg Mathias" 
         email="mathiasgreg@gmail.com" 
@@ -17,9 +17,9 @@ import SkillCategory from '../components/SkillCategory.astro';
       />
 
       <!-- Summary -->
-      <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 p-8 mb-6 hover:shadow-2xl transition-shadow duration-300">
+      <div class="bg-white/70 backdrop-blur-sm rounded-xl shadow-sm border border-white/30 p-6 mb-6">
         <Section title="Summary">
-          <p class="text-neutral-700 leading-relaxed text-lg">
+          <p class="text-neutral-700 leading-relaxed">
             Experienced Full Stack Engineer specializing in Ruby on Rails, API development, and scalable web applications. 
             Passionate about building user-focused solutions that enhance efficiency and engagement in healthcare and research. 
             Seeking to contribute my expertise to a high-impact team focused on improving healthcare technology.
@@ -28,7 +28,7 @@ import SkillCategory from '../components/SkillCategory.astro';
       </div>
 
       <!-- Experience -->
-      <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 p-8 mb-6 hover:shadow-2xl transition-shadow duration-300">
+      <div class="bg-white/70 backdrop-blur-sm rounded-xl shadow-sm border border-white/30 p-6 mb-6">
         <Section title="Experience">
           <div class="space-y-6">
             <Experience
@@ -72,8 +72,8 @@ import SkillCategory from '../components/SkillCategory.astro';
       </div>
 
       <!-- Education & Certifications Grid -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-        <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 p-8 hover:shadow-2xl transition-shadow duration-300">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-white/70 backdrop-blur-sm rounded-xl shadow-sm border border-white/30 p-6">
           <Section title="Education">
             <div class="space-y-4">
               <Education
@@ -90,21 +90,21 @@ import SkillCategory from '../components/SkillCategory.astro';
           </Section>
         </div>
 
-        <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 p-8 hover:shadow-2xl transition-shadow duration-300">
+        <div class="bg-white/70 backdrop-blur-sm rounded-xl shadow-sm border border-white/30 p-6">
           <Section title="Certifications">
-            <ul class="space-y-4 text-neutral-700">
-              <li class="flex items-start gap-4">
-                <span class="text-accent mt-1 flex-shrink-0 text-xl">✨</span>
+            <ul class="space-y-3 text-neutral-700">
+              <li class="flex items-start gap-3">
+                <span class="text-accent mt-0.5 flex-shrink-0">✨</span>
                 <div>
-                  <span class="font-semibold text-neutral-900 text-lg">Data Science Fellow</span>
-                  <p class="text-neutral-600">Correlation One (2024)</p>
+                  <span class="font-medium text-neutral-900">Data Science Fellow</span>
+                  <p class="text-neutral-600 text-sm">Correlation One (2024)</p>
                 </div>
               </li>
-              <li class="flex items-start gap-4">
-                <span class="text-accent mt-1 flex-shrink-0 text-xl">✨</span>
+              <li class="flex items-start gap-3">
+                <span class="text-accent mt-0.5 flex-shrink-0">✨</span>
                 <div>
-                  <span class="font-semibold text-neutral-900 text-lg">TESOL Certification</span>
-                  <p class="text-neutral-600">VIPKid</p>
+                  <span class="font-medium text-neutral-900">TESOL Certification</span>
+                  <p class="text-neutral-600 text-sm">VIPKid</p>
                 </div>
               </li>
             </ul>
@@ -113,24 +113,24 @@ import SkillCategory from '../components/SkillCategory.astro';
       </div>
 
       <!-- Involvement & Skills Grid -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-        <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 p-8 hover:shadow-2xl transition-shadow duration-300">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-white/70 backdrop-blur-sm rounded-xl shadow-sm border border-white/30 p-6">
           <Section title="Involvement">
-            <ul class="space-y-4 text-neutral-700">
-              <li class="flex items-start gap-4">
-                <span class="text-accent mt-1 flex-shrink-0 text-xl">✨</span>
+            <ul class="space-y-3 text-neutral-700">
+              <li class="flex items-start gap-3">
+                <span class="text-accent mt-0.5 flex-shrink-0">✨</span>
                 <div>
-                  <span class="font-semibold text-neutral-900 text-lg">Section Leader</span>
-                  <p class="text-neutral-600">Stanford University: Code In Place (April - June 2024)</p>
+                  <span class="font-medium text-neutral-900">Section Leader</span>
+                  <p class="text-neutral-600 text-sm">Stanford University: Code In Place (April - June 2024)</p>
                 </div>
               </li>
             </ul>
           </Section>
         </div>
 
-        <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 p-8 hover:shadow-2xl transition-shadow duration-300">
+        <div class="bg-white/70 backdrop-blur-sm rounded-xl shadow-sm border border-white/30 p-6">
           <Section title="Skills & Technologies">
-            <div class="space-y-4">
+            <div class="space-y-3">
               <SkillCategory 
                 category="Full Stack Development" 
                 skills="Ruby on Rails, JavaScript, React, TypeScript" 
@@ -157,9 +157,9 @@ import SkillCategory from '../components/SkillCategory.astro';
       </div>
 
       <!-- Footer -->
-      <footer class="text-center py-8">
-        <div class="bg-white/60 backdrop-blur-sm rounded-xl shadow-lg border border-white/20 p-6 no-print hover:shadow-xl transition-shadow duration-300">
-          <p class="text-neutral-500 text-sm font-medium">Built with Astro & Tailwind CSS</p>
+      <footer class="text-center py-6">
+        <div class="bg-white/50 backdrop-blur-sm rounded-lg shadow-sm border border-white/20 p-4 no-print">
+          <p class="text-neutral-500 text-sm">Built with Astro & Tailwind CSS</p>
         </div>
       </footer>
     </div>
